@@ -1,0 +1,60 @@
+{
+    "title": "my profile",
+    "rules": [
+        {
+            "description": "hold esc to open alfred",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "escape",
+                        "modifiers": {
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "parameters": {
+                        "basic.to_if_alone_timeout_milliseconds": 250,
+                        "basic.to_if_held_down_threshold_milliseconds": 250
+                    },
+                    "to_if_alone": [
+                        {
+                            "key_code": "escape"
+                        }
+                    ],
+                    "to_if_held_down": [
+                        {
+                            "shell_command": "open -a 'Alfred 5.app'"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "caps to control+option+space &  hold caps to caps",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to_if_alone": [
+                        {
+                            "key_code": "spacebar",
+                            "modifiers": [
+                                "left_control",
+                                "option"
+                            ]
+                        }
+                    ],
+                    "to_if_held_down":[
+                        {
+                            "key_code": "caps_lock"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}
