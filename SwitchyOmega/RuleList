@@ -1,0 +1,15 @@
+[SwitchyOmega Conditions]
+; Require: SwitchyOmega >= 2.3.2
+; Date: 2023/4/25
+; Usage: https://github.com/FelisCatus/SwitchyOmega/wiki/RuleListUsage
+
+*wikipedia.org*
+*v2ex*
+*github*
+*www.reddit.com*
+*tour.go-zh.org*
+*quora.com*
+*play.golang.org*
+*betterprogramming.pub*
+*myhatchpad.com*
+*adityarama1210.medium.com*
